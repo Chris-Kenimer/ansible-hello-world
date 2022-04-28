@@ -1,7 +1,7 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-  - name: Get disk facts
+  - name: Get disk facts 3
     community.windows.win_disk_facts:
 
   - name: Output first disk size
