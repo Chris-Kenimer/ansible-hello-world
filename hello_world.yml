@@ -1,4 +1,4 @@
-- name: Hello World Sample
+- name: Hello World Sample 2
   hosts: all
   tasks:
   - name: Get disk facts 3
@@ -18,4 +18,3 @@
       # Show disk size in Gibibytes
       disksize_gib_human: '{{ disk.size|filesizeformat(true) }}' 
       disksize_gib: '{{ (disk.size/1024|pow(3))|round|int }} GiB'
-
